@@ -1,7 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+// import { text } from 'express';
+import { useEffect } from "react";
+
 
 function App() {
+
+
+  // fetch('/api')
+  //   .then(res => res.text())
+  //   .then(text => console.log(text));
+
+  // useEffect(() => {
+  //   fetch('/api')
+  //   .then((res=>console.log(res.text())));    
+  // }, []);
+  
+  
   return (
     <div className="App">
       <header className="App-header">
