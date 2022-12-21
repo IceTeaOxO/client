@@ -2,21 +2,34 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Page from './Page';
+import ErrorPage from './ErrorPage';
 // import Page from './Page'
 import reportWebVitals from './reportWebVitals';
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Contact from './Test';
+
 
 //設置path，以及對應的元件
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Page />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "contacts/:contactId",
+        element: <Contact />,
+      },
+    ],
   },{
     path: "/a",
+    element:<App />,
+  },{
+    path: "/order",
     element:<App />,
   },
 ]);
