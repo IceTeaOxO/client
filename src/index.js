@@ -11,6 +11,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Contact from './Test';
+import Menu from './HI/Menu';
+import Order from './HI/Order';
+import UserInfo from './HI/UserInfo';
+import UserNum from './HI/UserNum';
+import SaleOrder from './HI/SaleOrder';
+import SaleReport from './HI/SaleReport';
+
+
 
 
 //設置path，以及對應的元件
@@ -29,8 +37,23 @@ const router = createBrowserRouter([
     path: "/a",
     element:<App />,
   },{
+    path: "/M",
+    element:<Menu />,
+  },{
     path: "/order",
-    element:<App />,
+    element:<Order />,
+  },{
+    path: "/info",
+    element:<UserInfo />,
+  },{
+    path: "/num",
+    element:<UserNum />,
+  },{
+    path: "/S/order",
+    element:<SaleOrder />,
+  },{
+    path: "/S/report",
+    element:<SaleReport />,
   },
 ]);
 
