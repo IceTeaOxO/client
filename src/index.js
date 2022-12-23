@@ -24,7 +24,7 @@ import SaleReport from './HI/SaleReport';
 //設置path，以及對應的元件
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/P",
     element: <Page />,
     errorElement: <ErrorPage />,
     children: [
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     path: "/a",
     element:<App />,
   },{
-    path: "/M",
+    path: "/",
     element:<Menu />,
   },{
     path: "/order",
