@@ -13,25 +13,23 @@ function UserForm() {
         setResponseBody({...responseBody, [name]: value})
         
     }
-    const onSubmitHandler = (event) => {
-        event.preventDefault()
-        console.log(responseBody)
-        // Form submission happens here
-        fetch("http://localhost:5000/", {method: "POST",
-        body: JSON.stringify(responseBody),   /*把json資料字串化*/
-        headers: new Headers({
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
-        })})
-            .then(res => res.json()) /*把request json化*/
-            .then(responseBody => {
-                /*接到request data後要做的事情*/
-                console.log("DATA:",responseBody)
-            })
-            .catch(e => {
-                /*發生錯誤時要做的事情*/
-                console.log("ERROR")
-            })
+    // const onSubmitHandler = (event) => {
+    //     event.preventDefault()
+    //     console.log(responseBody)
+    //     // Form submission happens here
+    //     fetch("http://localhost:5000", {method: "POST",
+    //     body: JSON.stringify(responseBody),   /*把json資料字串化*/
+    //     headers: new Headers({
+    //         'Content-Type': 'application/json',
+    //         'Access-Control-Allow-Origin': '*'
+    //     })})
+    //         .then(res => {res.json()
+    //         console.log("ressssssss")}) /*把request json化*/
+    //         .catch(e => {
+    //             /*發生錯誤時要做的事情*/
+    //             console.log("ERROR")
+    //             console.log(e)
+    //         })
 
 
         // axios.post("http://localhost:5000/num", responseBody)
@@ -43,12 +41,12 @@ function UserForm() {
         //     'Access-Control-Allow-Origin': '*'
         // },
         // })
-    }
+    // }
 
 
 
-    return (//action={`num`} method={`POST`}
-        <form  onSubmit={onSubmitHandler}>
+    return (// onSubmit={onSubmitHandler}
+        <form  action={`/`} method={`POST`}>
             post之後要redirect<br/>
             <label>姓名</label>
             <input name="name" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
