@@ -1,4 +1,4 @@
-
+import Button from '@mui/material/Button';
 function Order() {
   
     return (
@@ -11,6 +11,7 @@ function Order() {
             </ul>
 
             <p>價錢</p>
+            <Button href={`info`}>sign in</Button>
             <button><a href={`info`}>購買</a></button>
         </div>
     );
