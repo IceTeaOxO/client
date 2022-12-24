@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-restricted-globals */
-/**/
+
 import { Form } from "react-router-dom";
 
 export default function Contact() {
