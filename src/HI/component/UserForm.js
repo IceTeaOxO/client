@@ -3,9 +3,9 @@ import { useState } from "react";
 
 function UserForm() {
   
-    // interface FormDataType {name:string, phone:string, email:string}
+    // interface FormDataType {name:string, tele:string, email:string}
     //表單的資料型態
-    const formData = {name:"", phone:"", email:""}
+    const formData = {cusName:"", tele:"", email:""}
     const [responseBody, setResponseBody] = useState(formData)
 
     const inputChangeHandler = (event) => {
@@ -46,12 +46,12 @@ function UserForm() {
 
 
     return (// onSubmit={onSubmitHandler}
-        <form  action={`/`} method={`POST`}>
+        <form  action={`/customer`} method={`POST`}>
             post之後要redirect<br/>
             <label>姓名</label>
-            <input name="name" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
+            <input name="cusName" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
             <label>電話</label>
-            <input name="phone" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
+            <input name="tele" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
             <label>Email</label>
             <input name="email" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
             <input type={`submit`} value={`購買`}></input>

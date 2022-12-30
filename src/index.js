@@ -17,7 +17,7 @@ import UserInfo from './HI/UserInfo';
 import UserNum from './HI/UserNum';
 import SaleOrder from './HI/SaleOrder';
 import SaleReport from './HI/SaleReport';
-
+import Car from './HI/Car';
 
 
 
@@ -34,8 +34,8 @@ const router = createBrowserRouter([
       },
     ],
   },{
-    path: "/a",
-    element:<App />,
+    path: "/car",
+    element:<Car />,
   },{
     path: "/",
     element:<Menu />,
