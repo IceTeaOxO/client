@@ -1,4 +1,5 @@
 import Button from '@mui/material/Button';
+import OrderForm from './component/OrderForm';
 function Order() {
   
     return (
@@ -11,6 +12,9 @@ function Order() {
             </ul>
 
             <p>價錢</p>
+
+
+            <OrderForm/>
             <Button href={`info`}>sign in</Button>
             <button><a href={`info`}>購買</a></button>
         </div>

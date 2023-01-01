@@ -50,8 +50,7 @@ function SaleOrder() {
             <li><a href={`report`}>report</a></li>
         </nav>
         <button onClick={()=>fetchOrder()}>刷新</button>
-        time:
-        Order:
+        
         <div>
           {
             //obj destructuring
