@@ -1,13 +1,12 @@
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const UserNum=()=> {
   let [A,setA] = useState(0)
-  // const numtest = useRef(setNum)
+
   function number(num){
     setA(0+num)
   }
-  
   
   const fetchNum = ()=>{
     fetch('/OrderNum',{
@@ -31,7 +30,6 @@ const UserNum=()=> {
   }
 
     useEffect(()=>{
-      // console.log('execute function in useEffect');
       fetchNum();
     })
   // console.log(fetchNum().A)
