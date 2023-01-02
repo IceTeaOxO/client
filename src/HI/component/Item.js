@@ -2,6 +2,8 @@
 
 const Item = (item)=>{
     const {time,itemNo,Name,price,number} = item.item;
+    console.log("not use",itemNo,price)
+
     // console.log("QQQ",typeof(item.item.time))
     return(
         <div>

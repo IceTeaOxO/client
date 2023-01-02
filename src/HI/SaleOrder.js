@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, } from 'react';
 import Item from './component/Item';
 import { v4 } from 'uuid';
 
 function SaleOrder() {
-  const [data,setData] = useState([])
+  // const [data,setData] = useState([])
   const [data1,setData1] = useState([])
-  // const {time,itemNo,Name,price,number} = data1
 
 
   const fetchOrder = ()=>{
@@ -16,15 +15,9 @@ function SaleOrder() {
         return response.json();
     })
     .then(data=>{
-      // console.log(data)      
-      // console.log(typeof(data[0]))      
-      //將訂單資料儲存在當前狀態內
-      //排完後要讓資料動態的呈現在前端頁面中
-      //因為要動態呈現，所以需要及時知道狀態，要使用state和effect
       addList(order(data))   
-      // setData(order(data)) 
       setData1(order(data))   
-      
+      //發現變數會指向不對的地方，所以使用Data1代替
     })
     .catch((error) => {
         console.log(`Error: ${error}`);
@@ -33,7 +26,7 @@ function SaleOrder() {
 
   const order = (dataArray)=>{
     dataArray=dataArray.sort().reverse(); 
-    //無作用
+    //無作用，後續再修復
     return dataArray
   }
 
@@ -52,9 +45,7 @@ function SaleOrder() {
         <button onClick={()=>fetchOrder()}>刷新</button>
         
         <div>
-          {
-            //obj destructuring
-            
+          {            
             data1.map((item,index)=>{
               console.log("itemdata"+index,item);
               let id=v4()

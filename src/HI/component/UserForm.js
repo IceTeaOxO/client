@@ -47,7 +47,6 @@ function UserForm() {
 
     return (// onSubmit={onSubmitHandler}
         <form  action={`/customer`} method={`POST`}>
-            post之後要redirect<br/>
             <label>姓名</label>
             <input name="cusName" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
             <label>電話</label>

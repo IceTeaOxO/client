@@ -16,7 +16,6 @@ function OrderForm() {
 
     return (// onSubmit={onSubmitHandler}
         <form  action={`/menuOrder`} method={`POST`}>
-            post之後要redirect<br/>
             <label>取餐時間</label>
             <input name="time" type={`time`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
             <label>品項ID</label>
