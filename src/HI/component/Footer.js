@@ -18,7 +18,7 @@ const Footer = ()=>{
                     <li>地址<i class="fab fa-facebook"></i></li>
                     <ol>116台灣台北市文山區指南路二段64號
                     樂活小舖</ol>
-                    <li>聯絡人<i class="fab fa-instagram"></i></li>
+                    <li>聯絡電話<i class="fab fa-instagram"></i></li>
                     <ol>02 2937 5117</ol>
                     <li><a href=" ">加入Line<i class="fab fa-instagram"></i></a></li>
                     <li><a href=" ">FB粉絲團<i class="fab fa-twitter"></i></a></li>

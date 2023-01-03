@@ -1,5 +1,6 @@
 body{
-    background-color: beige;
+    background-color: #FFFFFF; /*beige*/
+    font-family: 'Noto Serif TC', serif;
 }
 
 @media only screen and (min-width: 769px) {
@@ -32,4 +33,20 @@ body{
     width: 50%;
     font-size: larger;
     padding: 10;
+}
+.rectangle{
+    display: block;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 2.5;
+    color: #ffffff;
+    background-color: #90B44B;
+    border-radius: 10px;
+}
+.word{
+    text-align: center;
+    font-size: 20px;
 }

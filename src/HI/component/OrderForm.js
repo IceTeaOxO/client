@@ -28,7 +28,7 @@ function OrderForm(item) {
             <input name="itemNo" type={`hidden`} value={itemno}></input><br/>
             
             
-            <label>餐點名稱:{name}</label>
+            <label>餐點名稱：{name}</label>
             <br/>
             <label>餐點價格{price}</label>
             <input name="price" type={`hidden`} value={price}></input>

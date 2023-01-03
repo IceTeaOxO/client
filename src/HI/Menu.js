@@ -7,7 +7,7 @@ function Menu() {
   
     return (
       <div className="">
-        <h1>H.I.Feeling Coffee早午餐</h1>
+        <h1>H.I.Feeling Coffee 早午餐</h1>
         <br/>
         <p>剩下的就是一些排版、圖片補充、文字補充、美化的部分了</p>
         <br/>
