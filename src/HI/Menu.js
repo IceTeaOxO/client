@@ -13,7 +13,7 @@ function Menu() {
         <br/>
         <Button href={`order`} fullWidth>查看菜單</Button>
         <br/>
-        <img src={logo} alt='hifeeling img'></img>
+        <img src={logo} alt='hifeeling img' className='img'></img>
         <Footer/>
         
       </div>

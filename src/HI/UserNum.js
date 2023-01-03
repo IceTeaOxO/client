@@ -1,4 +1,4 @@
-
+import './css/menu.css'
 import React, { useState, useEffect } from 'react';
 import Footer from './component/Footer';
 import gif from './img/gif.gif'
@@ -31,7 +31,7 @@ const UserNum=()=> {
         <h2 onClick={()=>fetchNum()} >你的取餐號碼:{A}</h2>
         
         <p>note:請截圖或出示該頁面以領取餐點，預約時間前15分鐘會寄一封email提醒信!</p>
-        <img alt='gif' src={gif}></img>
+        <img alt='gif' src={gif} className='img'></img>
 
         <Footer/>
       </div>
