@@ -5,7 +5,7 @@ function UserForm() {
   
     // interface FormDataType {name:string, tele:string, email:string}
     //表單的資料型態
-    const formData = {cusName:"", tele:"", email:""}
+    const formData = {cusName:"", tele:"", email:"",time:"",Num:""}
     const [responseBody, setResponseBody] = useState(formData)
 
     const inputChangeHandler = (event) => {
@@ -31,21 +31,8 @@ function UserForm() {
     //             console.log(e)
     //         })
 
-
-        // axios.post("http://localhost:5000/num", responseBody)
-        // fetch('http://localhost:5000/num', {
-        //     method: 'POST',
-        //     body: JSON.stringify(responseBody),
-        //     headers: {
-        //     'Content-Type': 'application/json',
-        //     'Access-Control-Allow-Origin': '*'
-        // },
-        // })
-    // }
-
-
-
-    return (// onSubmit={onSubmitHandler}
+    //當送出表單時，會顧客自動更新最新的取餐號碼(自己的ID)，訂單Num=0的號碼也會被指派為最新的取餐號碼
+    return (
         <form  action={`/customer`} method={`POST`}>
             <label>姓名</label>
             <input name="cusName" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
@@ -53,6 +40,9 @@ function UserForm() {
             <input name="tele" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
             <label>Email</label>
             <input name="email" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
+            <label>取餐時間</label>
+            <input name="time" type={`time`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
+
             <input type={`submit`} value={`購買`}></input>
         </form>
     );

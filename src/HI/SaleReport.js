@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 
 function SaleReport() {
   const [DBdata,setData] =useState([{}]);
-
-  const fetchReport = ()=>{
+//要去food取得所有品項的itemNo，然後從點餐DB裡將itemNo相同的資料做相加後回傳
+//似乎重作一個DB，然後fetch他的資料幫作圖表資料來源就可
+const fetchReport = ()=>{
     fetch('/orderReport',{
       method:'GET',
     })

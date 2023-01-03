@@ -1,19 +1,60 @@
-import Button from '@mui/material/Button';
 import OrderForm from './component/OrderForm';
-function Order() {
-  
-    return (
-      <div className="App">
-            <ul>
-                <li>下拉式分類菜單</li>
-                <li>預計使用CSS來做出</li>
-                <li>應該要是一個大表單，配合DB做完運算並回傳結果</li>
-            </ul>
+// import Toast from './component/Toast';
+import { v4 } from 'uuid';
+import React, { useState, } from 'react';
 
-            <OrderForm/>
-            <Button href={`info`}>sign in</Button>
-            <button><a href={`info`}>購買</a></button>
+function Order() {
+    //fetch food db根據內容動態生成表單
+    const [food,setFood] = useState([])
+    //控制隱藏顯示
+    const [showResults, setShowResults] = useState(false)
+
+
+  const fetchOrder = ()=>{
+    fetch('/food',{
+      method:'GET',
+    })
+    .then((response) => {
+        return response.json();
+    })
+    .then(data=>{
+      // console.log("test") 
+      // console.log("DATA",data)
+      //將資料庫的資料放入陣列food裡面
+      setFood(data)
+      if(showResults===false){
+        setShowResults(true)
+      }else{
+        setShowResults(false)
+      }
+    })
+    .catch((error) => {
+        console.log(`Error: ${error}`);
+    })
+  }
+
+    //
+    return (
+      <div >
+          <button onClick={()=>fetchOrder()}>吐司&漢堡菜單</button>
+        <div>
+        <form action={`/menuOrder`} method={`POST`}>
+          {            
+
+            food.map((item,index)=>{
+              console.log("itemdata"+index,item);
+              let id=v4()
+              return showResults ?<OrderForm key={id} item={item}/>:null
+            })
+          }
+          <input type={`submit`} value={`購買`}></input>
+        </form>
+
         </div>
+        
+        
+
+      </div>
     );
   }
   

@@ -3,4 +3,19 @@ body{
 }
 img{
     width: auto;
+    
+}
+.littleForm{
+    background-color: aqua;
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+}
+.order{
+    padding: 20px;
+}
+.bigButton{
+    width: 50%;
+    font-size: larger;
+    padding: 10;
 }

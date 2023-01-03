@@ -4,7 +4,7 @@ function UserInfo() {
   
 
     return (
-      <div className="App">
+      <div >
         <UserForm/>
       </div>
     );
