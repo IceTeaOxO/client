@@ -24,7 +24,7 @@ const Footer = ()=>{
                     樂活小舖</ol>
                     <li>聯絡電話<i class="fab fa-instagram"></i></li>
                     <ol>02 2937 5117</ol>
-                    <li><a style={{color: '#404040'}} href="https://l.facebook.com/l.php?u=https%3A%2F%2Flin.ee%2FAiGvF2d&h=AT1NBu3kxK553MLGhizaZ-lweVpCApwOj2IVS8EJWl8zv6GgL3DhME6pTrOw0ME4kD3-RGl6q1PKSq16VvzTBUeH-P_IPER_tsw44zwN0M-EQgq0GznQs1NfwlGEzpiCy3AVh5u2MJBiO0H69Wxl&__tn__=%2CmH-R&c[0]=AT2v65AEFTmE_Hs70vDtIfqYFbP0Ixr16YGQ1vhixpmF1uq9UlTXTKHf0gg_inM6hNnsTSbzBMQ47AxzCdhcB2Qj8OnS5glDFiLPRq5Y9hDEDPOZXLrV-du9G2ddfUx9ElCdY01wwdboHlAQTy5Jy6w3VArHyN6ylE-ngWAoAsRcXEp7DTvTGZ6zFdE3tD-1MvvvqPAvHNxmH79D_29Bi3z3p2NeCcHY77Su">加入Line<i class="fab fa-instagram"></i></a></li>
+                    <li><a style={{color: '#404040'}} href="https://line.me/R/ti/p/@263cjbxg">加入Line<i class="fab fa-instagram"></i></a></li>
                     <li><a style={{color: '#404040'}} href="https://www.facebook.com/H.I.feelingcoffee/">FB粉絲團<i class="fab fa-twitter"></i></a></li>
                     <div class="clearfix"></div>
                     <p class="footer-text">Copyright © 2023 H.I.Feeling All Rights Reserved.</p>
