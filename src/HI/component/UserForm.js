@@ -34,16 +34,19 @@ function UserForm() {
     //當送出表單時，會顧客自動更新最新的取餐號碼(自己的ID)，訂單Num=0的號碼也會被指派為最新的取餐號碼
     return (
         <form  action={`/customer`} method={`POST`}>
-            <label>姓名</label>
-            <input name="cusName" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
-            <label>電話</label>
+            <p style={{ marginLeft: "20px", marginTop: "20px"}}>請填寫您的連絡資訊，我們將寄送取餐編號置您的電子信箱</p>
+            <label style={{ marginLeft: "20px", marginTop: "10px"}}>姓名 </label>
+            <input name="cusName" type={`text`} onChange={(e)=>inputChangeHandler(e)} style={{ marginTop: "10px"}}></input><br/>
+            <label style={{ marginLeft: "20px"}}>電話 </label>
             <input name="tele" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
-            <label>Email</label>
+            <label style={{ marginLeft: "20px"}}>Email </label>
             <input name="email" type={`text`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
-            <label>取餐時間</label>
+            <label style={{ marginLeft: "20px"}}>取餐時間 </label>
             <input name="time" type={`time`} onChange={(e)=>inputChangeHandler(e)}></input><br/>
-
-            <input type={`submit`} value={`購買`}></input>
+            <br />
+            <input type={`submit`} value={`購買`}  
+            style={{ marginLeft: "20px", width: "60px", height: "30px", color: "#ffffff", backgroundColor: "#90B44B",
+            border: "0", borderRadius: "3px",fontFamily:"Noto Serif TC", fontWeight:"light"}}></input>
         </form>
     );
   }
