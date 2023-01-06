@@ -14,7 +14,7 @@ function Order() {
 
 
   const fetchOrder = ()=>{
-    fetch('/food',{
+    fetch('/api/food',{
       method:'GET',
     })
     .then((response) => {
@@ -46,7 +46,7 @@ function Order() {
       <Typography style={{fontFamily:"Noto Serif TC"}}>吐司&漢堡菜單</Typography>
       </AccordionSummary>
       </Accordion>
-      <form action={`/menuOrder`} method={`POST`} style={{ marginLeft: "20px"}}>
+      <form action={`/api/menuOrder`} method={`POST`} style={{ marginLeft: "20px"}}>
             { 
               food.map((item,index)=>{
                 console.log("itemdata"+index,item);

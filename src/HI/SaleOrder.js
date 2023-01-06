@@ -8,7 +8,7 @@ function SaleOrder() {
 
 
   const fetchOrder = ()=>{
-    fetch('/menuOrder',{
+    fetch('/api/menuOrder',{
       method:'GET',
     })
     .then((response) => {

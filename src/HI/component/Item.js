@@ -8,7 +8,7 @@ const Item = (item)=>{
     //fetch food
     //根據itemNo找到食物的名字和價格
     const fetchFood = ()=>{
-        let url ='/foodDetail'+
+        let url ='/api/foodDetail'+
         '?'+
         'itemNo='+
         itemNo;

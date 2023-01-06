@@ -9,7 +9,7 @@ const UserNum=()=> {
     setA(0+num)
   }
   const fetchNum = ()=>{
-    fetch('/OrderNum',{
+    fetch('/api/OrderNum',{
       method:'GET',
     })
     .then((response) => {

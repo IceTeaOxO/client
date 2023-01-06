@@ -33,7 +33,7 @@ function UserForm() {
 
     //當送出表單時，會顧客自動更新最新的取餐號碼(自己的ID)，訂單Num=0的號碼也會被指派為最新的取餐號碼
     return (
-        <form  action={`/customer`} method={`POST`}>
+        <form  action={`/api/customer`} method={`POST`}>
             <p style={{ marginLeft: "20px", marginTop: "20px"}}>請填寫您的連絡資訊，我們將寄送取餐編號置您的電子信箱</p>
             <label style={{ marginLeft: "20px", marginTop: "10px"}}>姓名 </label>
             <input name="cusName" type={`text`} onChange={(e)=>inputChangeHandler(e)} style={{ marginTop: "10px"}}></input><br/>
