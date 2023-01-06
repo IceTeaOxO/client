@@ -1,7 +1,7 @@
 import './css/menu.css'
 import React, { useState, useEffect } from 'react';
 import Footer from './component/Footer';
-import gif from './img/gif.gif'
+// import gif from './img/gif.gif'
 
 const UserNum=()=> {
   let [A,setA] = useState(0)
